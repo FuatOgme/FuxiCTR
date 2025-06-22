@@ -158,7 +158,7 @@ def load_pretrain_emb(pretrain_path, keys=["key", "value"]):
         with h5py.File(pretrain_path, 'r') as hf:
             values = [hf[k][:] for k in keys]
     elif pretrain_path.endswith("npz"):
-        npz = np.load(pretrain_path)
+        npz = np.load(pretrain_path,allow_pickle=True)
         values = [npz[k] for k in keys]
     elif pretrain_path.endswith("parquet"):
         df = pd.read_parquet(pretrain_path)
