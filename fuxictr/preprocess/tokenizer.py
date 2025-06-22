@@ -1,8 +1,8 @@
 # =========================================================================
 # Copyright (C) 2024. The FuxiCTR Library. All rights reserved.
 # Copyright (C) 2022. Huawei Technologies Co., Ltd. All rights reserved.
-# 
 # Licensed under the Apache License, Version 2.0 (the "License");
+# 
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
@@ -18,6 +18,7 @@
 from collections import Counter
 import numpy as np
 import h5py
+import pandas as pd
 from tqdm import tqdm
 import polars as pl
 from keras_preprocessing.sequence import pad_sequences
