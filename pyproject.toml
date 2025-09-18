@@ -6,9 +6,10 @@ authors = ["FuatOgme <fuat.ogme@gmail.com>"]
 #readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+#python = "^3.9"
+python = ">=3.9,<3.14"
 #torch = "2.1.2"
-torch = { version = "2.7.0.dev20250310+cu124", source = "pytorch-nightly-cu124" }
+#torch = { version = "2.7.0.dev20250310+cu124", source = "pytorch-nightly-cu124" }
 tensorflow = "^2.18"
 numpy = "1.26.4"
 scikit-learn = "0.24.0"
@@ -19,6 +20,7 @@ h5py = "^3.13.0"
 tqdm = "^4.67.1"
 pyarrow = "^19.0.1"
 polars = "<=1.0.0"
+torch = "^2.8.0"
 
 
 [build-system]
@@ -34,6 +36,6 @@ include = "fuxictr"
 include = "model_zoo"
 
 [[tool.poetry.source]]
-name = "pytorch-nightly-cu124"
-url = "https://download.pytorch.org/whl/nightly/cu124"
+name = "pytorch-cu129"
+url = "https://download.pytorch.org/whl/cu129"
 priority = "supplemental"
