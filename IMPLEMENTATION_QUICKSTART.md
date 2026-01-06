@@ -3,6 +3,10 @@
 
 This guide provides **concrete implementation templates** for the top 3 recommended research directions.
 
+> **⚠️ Important Note:** The code examples below use import paths based on the FuxiCTR structure. You may need to adjust import statements to match your specific repository layout. For example:
+> - `from model_zoo.DeepFM.src.DeepFM import DeepFM` → verify the actual path in your model_zoo
+> - `from fuxictr.pytorch.layers import ...` → ensure these modules exist or create them
+
 ---
 
 ## 🎯 Direction 1: Explainable CTR - Starter Implementation
